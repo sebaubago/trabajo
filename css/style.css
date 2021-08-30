@@ -1,0 +1,132 @@
+* {
+    utline: 1px dotted red;
+  box-sizing: border-box;
+
+  margin: 0px;
+  padding: 0%;
+}
+body {
+  background-color: blanchedalmond;
+
+  padding: 20px 20px 20px 20px;
+}
+
+header {
+  background-color: #ad521f;
+  min-height: 250px;
+}
+
+header nav ul {
+  background-color: #ad521f;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 0px;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+}
+
+p:first-child {
+  color: white;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+}
+
+.misProyectos {
+  background-color: #3c3b7a;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.misProyectos h2 {
+  color: #ad521f;
+  font-size: 12px;
+}
+.experiencia {
+  background-color: #3c3b7a;
+  padding-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.experiencia h2 {
+  color: #ad521f;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+
+  position: fixed;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 20px 0px 0px 30px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+
+footer nav {
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0px 80px 0px 80px;
+  
+  font-size: 0.9em;
+}
+
+footer nav li {
+  float: left;
+  padding: 20px 70px 20px 70px;
+  text-align: center;
+}
+
+footer {
+  background-color: #1279e0;
+}
+
+.experiencia .btn {
+  text-align: center;
+  color: white;
+  background-color: brown;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  margin: 5px;
+  position: relative;
+  left: 47%;
+}
+
+.experiencia .btn1 {
+  text-align: center;
+  color: white;
+  background-color: brown;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  margin: 5px;
+  position: relative;
+  left: 42.5%;
+}
