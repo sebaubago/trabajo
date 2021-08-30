@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,600;1,100;1,600&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -11,35 +18,41 @@
     <header>
       <nav>
         <ul>
-          <li>Project</li>
-          <li>Work Experience</li>
-          <li>Education</li>
+          <li><a href="index.html#project">Project</a></li>
+          <li><a href="index.html#experiencia">Work Experience</a></li>
+          <li><a href="index.html#educacion">Education</a></li>
         </ul>
       </nav>
-      <h1>Roberto Hernández</h1>
-      <br />
-      <h2>Tech Educator + Full Stack developer</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        <br />Cupiditate fugit atque dolorem tempore sint est sit blanditiis
-        voluptatibus distinctio fuga.
-      </p>
+      <div class="container">
+        <h1>Roberto Hernández</h1>
+        <br />
+        <h2>Tech Educator + Full Stack Developer</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          quasi vero architecto quam impedit distinctio hic quia quae, qui
+          dolores incidunt facere voluptates, possimus quod voluptate.
+          Recusandae officiis voluptatum ab.
+        </p>
+      </div>
     </header>
-    <section class="misProyectos">
+
+    <section id='project' class="misProyectos">
       <h2>Mis proyectos</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa?
       </p>
     </section>
-    <section class="experiencia">
+
+    <section id='experiencia' class="experiencia">
       <h2>Investigación de Blockchain en la cadena de suministro</h2>
       <p>Impartiendo clases de Ruby on Rails</p>
       <button class="btn">Edutecno</button><br />
       <h2>APP para pagos de Escuelas On Line</h2>
       <p>Impartiendo clases de Ruby on Rails</p>
-      <button class="btn1">Thyssenkrupp material de México</button>
+      <button class="btn">Thyssenkrupp material de México</button>
     </section>
-    <section class="educacion"></section>
+
+    <section id='educacion' class="educacion"></section>
     <footer>
       <nav>
         <ul>
@@ -50,6 +63,16 @@
         </ul>
       </nav>
     </footer>
+
+    <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+        <source src="assets/Lines.mp4" type="video/mp4">
+        <source src="images/video.webm" type="video/webm">
+        Your Browser is not supperted!
+    </video>
+
+
+
   </body>
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

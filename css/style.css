@@ -1,37 +1,72 @@
 * {
-  outline: 1px dotted rebeccapurple;
-  box-sizing: border-box;
+  /* outline: 1px dotted rebeccapurple; */
   margin: 0px;
   padding: 0%;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
-  background-color: blanchedalmond;
-  padding: 20px 20px 20px 20px;
+  background-color: black;
+  width: 100%;
 }
 
 header {
   background-color: #ad521f;
-  min-height: 250px;
+  min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1514931181523-5fc9ac41ea38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1671&q=80');
+  vertical-align: center;
+  align-content: center;
+  vertical-align: middle;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: red;
+  font-size: 2rem;
+  margin: 20px 80px;
+}
+
+header nav ul li:hover {
+  font-weight: bold;
 }
 
 header nav ul {
-  background-color: #ad521f;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  /* background-color: rgba(255, 255, 255, 0.37); */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.container:hover {
+  /* background-color: rgba(255, 255, 255, 0.37); */
+  color: white;
 }
 
 h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 17px;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-size: 5rem;
   text-align: center;
   padding-top: 0px;
-  font-size: 20px;
+  text-shadow: 20px 0px 30px red;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 3rem;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.541);
   line-height: 1.8;
 }
 
@@ -40,7 +75,7 @@ p:first-child {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 12px;
   text-align: center;
   color: white;
@@ -48,32 +83,58 @@ p {
 }
 
 .misProyectos {
-  background-color: #3c3b7a;
+  background-color: black;
   padding-top: 50px;
   padding-bottom: 30px;
+  height: 150px;
+  margin-top: 150px;
 }
 
 .misProyectos h2 {
-  color: #ad521f;
-  font-size: 12px;
+  color: #ff0000;
+  font-size: 3rem;
 }
 
 .experiencia {
-  background-color: #3c3b7a;
+  background-color: white;
   padding-bottom: 40px;
+  padding-top: 40px;
+  margin: 150px 0px;
   position: relative;
   width: 100%;
+  text-justify: center;
+  justify-content: center;
+
 }
 
 .experiencia h2 {
-  color: #ad521f;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 50px;
 }
 
+.experiencia .btn {
+  text-align: center;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.experiencia .btn:hover {
+  text-align: center;
+  color: white;
+  background-color: rgb(143, 0, 0);
+}
+
+
 nav ul {
   list-style-type: none;
-
   position: fixed;
   display: inline-block;
   text-align: center;
@@ -87,13 +148,11 @@ nav ul {
   position: sticky;
 }
 
-footer nav {}
-
 footer nav ul {
   list-style-type: none;
   padding: 0px 80px 0px 80px;
-
-  font-size: 0.9em;
+  font-size: 3em;
+  color: white !important;
 }
 
 footer nav li {
@@ -103,31 +162,38 @@ footer nav li {
 }
 
 footer {
-  background-color: #1279e0;
+  padding-top: 50px;
+  background-color: #000000;
+  color: white;
+  height: 300px;
+  text-align: center;
 }
 
-.experiencia .btn {
-  text-align: center;
+footer a {
+  text-decoration: none;
   color: white;
-  background-color: brown;
-  padding: 5px;
-  cursor: pointer;
-  border: none;
-  font-size: 15px;
-  margin: 5px;
-  position: relative;
-  left: 47%;
+  margin: 0 20px;
 }
 
-.experiencia .btn1 {
-  text-align: center;
-  color: white;
-  background-color: brown;
-  padding: 5px;
-  cursor: pointer;
-  border: none;
-  font-size: 15px;
-  margin: 5px;
-  position: relative;
-  left: 42.5%;
+footer a:hover {
+  color: red;
+}
+
+
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* opacity: 0.3; */
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
